@@ -12,7 +12,7 @@ wget https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-g
 tar xzf nexus-3.29.2-02-unix.tar.gz -C /opt/nexus --strip-components=1
 chown -R nexus:nexus /opt/nexus
 
-nano /opt/nexus/bin/nexus.vmoptions
+nano /opt/nexus/bin/nexus.vmoptions #in this file where ever we see ../sonartype, make it to ./sonartype
 
 
 
